@@ -25,14 +25,44 @@ body{
   /*margin: 0;*/ /*chop margin on sides. Taken care in global setting*/
 }
 
-.box-1{
-  background-color: #333;
-  color: #fff;
+/* global setting for links */
+a{
+  text-decoration: none;
+  color: black;
 }
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: green;
+}
+
+/* a:visited{
+  color: grey;
+} */
 
 .container{
   width: 80%; /*responsive*/
   margin:auto; /*makes the div to centre align*/
+}
+
+.button{
+  background-color: #333;
+  color:#fff;
+  padding: 10px 15px;
+  border:none;
+}
+
+.button: hover{
+  background: red;
+  color: #fff;
+}
+
+.box-1{
+  background-color: #333;
+  color: #fff;
 
   /*border*/
   /*individual border setting*/
@@ -77,5 +107,57 @@ body{
 /*modifying css for elements within a class seperately*/
 /*css for h1 within box-1 class*/
 .box-1 h1{
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
 
+.box-2{
+  border: 3px dotted #ccc;
+  padding:20px;
+  margin: 20px;
+}
+
+.categories{
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2{
+  text-align: center;
+}
+
+.categories ul{
+  padding:0;
+  padding-left: 20px;
+  list-style: square;
+  list-style: none;
+}
+
+.categories li{
+  padding-bottom: 6px;
+  border-bottom: dotted 1px #333;
+  list-style-image: url('../images/check.png');
+}
+
+my-form{
+  padding-left: 20px;
+}
+
+.my-form .form-group{
+  padding-bottom:15px;
+}
+
+.my-form label{
+  display: block; /* puts labels and text boxes in seperate lines of the block*/
+}
+
+.my-form input[type="text"], .my-form textarea{
+  padding:8px;
+  width: 100%;
 }
