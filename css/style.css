@@ -1,0 +1,81 @@
+/* external css */
+/* h1{
+  color:purple;
+} */
+
+*{
+  /*global initial settings*/
+  /* zeroing out all margins and padding*/
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: #f4f4f4;
+  color: #555555;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  /* same as above */
+  /* font: normal 16px Arial, Helvetica, sans-serif; */
+
+  line-height: 1.6em;
+  /*margin: 0;*/ /*chop margin on sides. Taken care in global setting*/
+}
+
+.box-1{
+  background-color: #333;
+  color: #fff;
+}
+
+.container{
+  width: 80%; /*responsive*/
+  margin:auto; /*makes the div to centre align*/
+
+  /*border*/
+  /*individual border setting*/
+  border-right: 5px red solid; /*size color style*/
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+
+  /* setting width of all borders*/
+  border-width:3px;
+
+  /*setting specific borders*/
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+
+  /*single command for all borders*/
+  /*this command overrides all above commands*/
+  border: 5px red solid;
+
+  /*padding*/
+  /*padding will be below the border*/
+
+  /*padding individually*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  /*same as above*/
+  padding: 20px;
+
+  /*margins*/
+  /*margins are spaces above the border*/
+
+  /*individual margins*/
+  margin-top:20px;
+
+  /*overrides above*/
+  margin:20px 0; /*top and bottom 20px, left and right 0*/
+}
+
+/*modifying css for elements within a class seperately*/
+/*css for h1 within box-1 class*/
+.box-1 h1{
+
+}
